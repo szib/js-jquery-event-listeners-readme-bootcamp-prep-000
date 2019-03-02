@@ -26,7 +26,7 @@ describe('Selectors', () => {
       window.pressIt();
 
       const input = window.$('#typing');
-      const event = window.$.Event('keydown', { keyCode: 71 })
+      const event = window.$.Event('keydown', { which: 71 })
       input.trigger(event)
 
       expect(window.alert).toHaveBeenCalled()
@@ -38,8 +38,8 @@ describe('Selectors', () => {
       window.pressIt();
 
       const input = window.$('#typing');
-      const event = window.$.Event('keydown', { keyCode: 70 })
-      // input.trigger(event)
+      const event = window.$.Event('keydown', { which: 70 })
+      input.trigger(event)
 
       expect(window.alert).toNotHaveBeenCalled()
     })
