@@ -1,8 +1,7 @@
 //define functions here
 function getIt() {
-  $('p').on('click', {
-    
-  window.alert('Hey!')
+  $('p').on('click', function() {
+    window.alert('Hey!')
   })
 }
 
